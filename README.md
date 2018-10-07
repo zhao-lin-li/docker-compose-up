@@ -6,17 +6,12 @@ Getting Started
 1. install docker
 1. install docker-compose
 1. clone repository: `git clone --recursive https://github.com/zhao-lin-li/docker-compose-pull.git`
-1. run bootstrap.sh: `./bootstrap.sh`
-1. start service: `docker-compose up`
+1. run `docker-compose pull` to pull the images
 
-Testing
--------
-* TBD
-
-Documenting
------------
-* TBD
-
-Notes
------
-* TBD
+Verify Image
+------------
+```shell
+$ docker image
+REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
+tomcat                    9.0.12              287b3865bc34        9 days ago          677MB
+```
